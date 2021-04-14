@@ -1,0 +1,20 @@
+<template>
+
+	<div class="slds-p-around_small lgc-bg">
+		<lightning-input name="first" type="text" label="First Name" placeholder="John..." onchange={handleChange}>
+		</lightning-input>
+		<b>First Name Event: {inputEventFirst}</b>
+	</div>
+
+	<div class="slds-p-around_medium lgc-bg">
+		<lightning-input name="last" type="text" label="Last Name" placeholder="Doe..." onchange={handleChange}>
+		</lightning-input>
+		<b>Last Name Event: {inputEventLast}</b>
+	</div>
+
+	<lightning-button variant="brand" label="Submit" onclick={submit} class="slds-align_absolute-center">
+	</lightning-button>
+
+	<h2>{fullName}</h2>
+
+</template>
